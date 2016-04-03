@@ -2,12 +2,17 @@
 let router = require("./lib/router");
 let http = require("http");
 
-router.default('', function(data, res){
-        res.write("Hello World");
-        res.end();
+router.use('/', function(req, res){
+    res.write("<div>Hello world</div>");
+    return res;
+});
+router.get('/', function(req, res){
+    res.write("<div>Food bar</div>");
+    return res;
 });
 let server = http.createServer(function(req, res){
-    router.run(req, res);
+    res = router.run(req, res);
+    res.end();
 });
 
 server.listen(8080);
