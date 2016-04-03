@@ -1,0 +1,20 @@
+{
+  "name": "sample-node-router",
+  "version": "1.0.0",
+  "description": "A toy router for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "router",
+    "toy"
+  ],
+  "author": "Justin Barclay",
+  "license": "GPL-3.0",
+  "jshintConfig": {
+    "esversion": 6,
+    "node": true
+    }
+}
