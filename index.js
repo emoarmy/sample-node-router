@@ -2,7 +2,7 @@
 let router = require("./lib/router");
 let http = require("http");
 
-router.default('/', function(res){
+router.default('', function(data, res){
         res.write("Hello World");
         res.end();
 });
